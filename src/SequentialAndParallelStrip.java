@@ -7,7 +7,7 @@ public class SequentialAndParallelStrip {
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(1,2,3,4);
 
-        // For Parallel Strip
+        // For Parallel Strip Using parallelStream()
         numbers.parallelStream().forEach(e->{
             System.out.println(e + " "+Thread.currentThread().getName());
         });
